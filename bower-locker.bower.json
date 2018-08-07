@@ -2,10 +2,10 @@
   "name": "brightspace-integration",
   "dependencies": {
     "d2l-alert": "^3.1.0",
-    "d2l-button": "^4.5.1",
+    "d2l-button": "^4.6.0",
     "d2l-button-group": "^2.1.0",
     "d2l-colors": "^3.1.2",
-    "d2l-dropdown": "^6.3.0",
+    "d2l-dropdown": "^6.4.0",
     "d2l-fastdom-import": "Brightspace/fastdom-import#v1.0.2",
     "d2l-fetch": "Brightspace/d2l-fetch#^1.8.0",
     "d2l-fetch-auth": "Brightspace/d2l-fetch-auth#^0.9.0",
@@ -19,9 +19,10 @@
     "d2l-menu": "^1.1.0",
     "d2l-more-less": "^4.3.0",
     "d2l-my-courses": "Brightspace/d2l-my-courses-ui#^5.6.1",
+    "d2l-navigation": "^0.2.0",
     "d2l-offscreen": "^3.0.3",
     "d2l-polymer-behaviors": "^1.5.0",
-    "d2l-rubric": "Brightspace/d2l-rubric#^0.74.0",
+    "d2l-rubric": "Brightspace/d2l-rubric#^0.84.0",
     "d2l-save-status": "Brightspace/d2l-save-status#^0.8.0",
     "d2l-simple-overlay": "git://github.com/Brightspace/simple-overlay#^2.2.0",
     "d2l-scroll-spy": "^0.0.3",
@@ -33,7 +34,8 @@
     "jquery-vui-collapsible-section": "^1.2.2",
     "jquery-vui-change-tracking": "^0.6.0",
     "polymer": "^2.5.0",
-    "susy": "^2.2.12"
+    "susy": "^2.2.12",
+    "d2l-my-dashboards": "^1.0.0"
   },
   "private": true,
   "resolutions": {
