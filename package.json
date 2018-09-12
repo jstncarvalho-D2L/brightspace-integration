@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "autoprefix": "postcss ./build/bsi.css -o ./build/bsi.css -u autoprefixer",
-    "build": "npm run build:wc && npm run build:js && npm run build:sass && npm run build:icons && npm run build:navicons && npm run build:email-icons && npm run build:babelHelpers && npm run build:esm-amd-loader",
+    "build": "npm run build:wc && npm run build:js && npm run build:sass && npm run build:icons && npm run build:navicons && npm run build:email-icons && npm run build:babelHelpers && npm run build:esm-amd-loader && npm run build:stencil",
     "build:js": "rollup -c ./rollup/rollup.config.js -o ./build/bsi.js -- ./js/index.js",
     "postbuild:js": "npm run uglify:js",
     "build:babelHelpers": "babel-external-helpers > ./build/babel-helpers.js",
@@ -15,6 +15,7 @@
     "build:sass:datagrid": "node-sass --output-style expanded ./sass/datagrid/datagrid.scss ./build/datagrid.css",
     "build:sass:homepages": "node-sass --output-style expanded ./sass/homepages/homepages.scss ./build/homepages.css",
     "postbuild:sass": "npm run autoprefix && npm run uglify:css",
+    "build:stencil": "cpy --parents --cwd=node_modules/@d2l/brightspace-ui-stencil/dist \"**/*.*\" ../../../../build/stencil",
     "build:icons": "cpy --parents --cwd=bower_components/d2l-icons \"images/**/*.*\" ../../build",
     "build:navicons": "cpy \"nav-icons/*.*\" build/images/nav-icons",
     "build:email-icons": "node build-email-icons.js",
