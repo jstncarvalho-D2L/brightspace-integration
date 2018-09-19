@@ -14,24 +14,27 @@
   ],
   "sources": [],
   "extraDependencies": [
-    "bower_components/d2l-rubric/editor/images/**"
+    "bower_components/d2l-rubric/editor/images/**",
+    "bower_components/d2l-html-editor/skin-4.3.7/**",
+    "bower_components/d2l-html-editor/langs/**",
+    "bower_components/d2l-html-editor/d2l_lang_plugin/**"
   ],
   "builds": [
     {
       "name": "bundled",
-      "bundle": true,
+      "bundle": false,
       "addPushManifest": false,
       "addServiceWorker": false,
       "insertPrefetchLinks": false,
       "css": {
-        "minify": true
+        "minify": false
       },
       "js": {
         "compile": false,
-        "minify": true
+        "minify": false
       },
       "html": {
-        "minify": true
+        "minify": false
       }
     }
   ]
