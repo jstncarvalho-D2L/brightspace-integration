@@ -69,6 +69,11 @@
 	width: 24px;
 }
 
+d2l-navigation-button button:focus .d2l-navigation-s-personal-menu-wrapper d2l-icon,
+d2l-navigation-button button:hover .d2l-navigation-s-personal-menu-wrapper d2l-icon {
+	color: inherit;
+}
+
 .d2l-navigation-s-personal-menu-text-wrapper {
     display: flex;
     flex-direction: column;
